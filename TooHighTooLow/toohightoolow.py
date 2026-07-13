@@ -19,13 +19,13 @@ class too_high_too_low:
         # Check *if* the player has made 10 guesses
         # If so, print a message saying they've run out of guesses and reveal the number
         # Exit the loop
-
         self.number = random.randint(1, 100)
         self.guesses = 0
         pass
 
     def play(self):
         while True:
+            print(f"Shhh! The secret number is {self.number}")
             guess = int(input("Enter a number between 1 and 100 inclusive: "))
             self.guesses += 1
             if (guess == self.number):
